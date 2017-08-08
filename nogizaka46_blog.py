@@ -103,7 +103,7 @@ def build_nogi_index():
 
     # todo: sort by post date
     with open(os.path.normpath(ROOT_DIR + "/nogizaka46-blog_index.json"), mode='w', encoding='utf8') as blogindexfp,\
-         open(os.path.normpath(CONFIG['root_directory'] + "/social_CONFIGex.json"), mode='w', encoding='utf8') as masterindexfp:
+         open(os.path.normpath(CONFIG['root_directory'] + "/social48_index.json"), mode='w', encoding='utf8') as masterindexfp:
             json.dump(master_index, masterindexfp, ensure_ascii=False, indent=2)
             json.dump(member_list, blogindexfp, ensure_ascii=False, indent=2)
 
